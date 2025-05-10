@@ -70,7 +70,7 @@ These pages maintain the same visual and structural design as the homepage and c
 ## 🚀 How to view
 
 Project is deployed via GitHub Pages:  
-👉 [View Live]() 
+👉 [View Live](https://naztes0.github.io/labWeb/) 
 
 
 ---
