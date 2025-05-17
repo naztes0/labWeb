@@ -5,10 +5,10 @@ header {
     margin: 0;
     width: 100%;
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 10px
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    min-height: 140px;
 }
 
 .overlay {
@@ -30,13 +30,15 @@ header .logo {
 }
 
 header .logo_block {
-    width: 25%;
+    /* width: 25%; */
     display: flex;
     flex-direction: row;
     color: #373a46;
     font-size: 1.4rem;
     gap: 20px;
     margin: 15px;
+    justify-self: center;
+    grid-column: 1;
 }
 
 
@@ -51,16 +53,18 @@ header .text {
 }
 
 
-header .contact_block {
-    width: 15%;
+header .contact-block {
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    margin: 15px 0;
+    margin: 1rem;
+    grid-column: 2;
+    justify-self: center;
 }
 
-header .contact_block .socials {
+header .contact-block .socials {
     width: 100%;
     display: flex;
     justify-content: right;
@@ -70,7 +74,7 @@ header .contact_block .socials {
     gap: 10px;
 }
 
-header .contact_block button {
+header .contact-block button {
     background-color: white;
     border: none;
     border-radius: 50%;
@@ -80,18 +84,18 @@ header .contact_block button {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-header .contact_block button:hover {
+header .contact-block button:hover {
     transform: scale(1.2);
     box-shadow: 3px -1px 6px #2f3346a8;
 }
 
-header .contact_block button img {
+header .contact-block button img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-header .contact_block .text {
+header .contact-block .text {
     font-size: 1.4rem;
     color: #373a46;
 }
@@ -102,7 +106,7 @@ header .contact_block .text {
 
     /*Header*/
     header {
-        justify-content: space-between;
+        min-height: 126px;
     }
 
     header .logo_block {
@@ -115,16 +119,15 @@ header .contact_block .text {
         height: 6rem;
     }
 
-    header .contact_block {
-        width: 20%;
+    header .contact-block {
         margin: 15px 50px;
     }
 
-    header .contact_block button {
+    header .contact-block button {
         width: 2.1rem;
     }
 
-    header .contact_block .text {
+    header .contact-block .text {
         font-size: 1.3rem;
     }
 }
@@ -140,16 +143,15 @@ header .contact_block .text {
         height: 5rem;
     }
 
-    header .contact_block {
-        width: 25%;
+    header .contact-block {
         margin: 10px 25px;
     }
 
-    header .contact_block button {
+    header .contact-block button {
         width: 1.9rem;
     }
 
-    header .contact_block .text {
+    header .contact-block .text {
         font-size: 1.2rem;
     }
 
@@ -167,20 +169,20 @@ header .contact_block .text {
         height: 4.5rem;
     }
 
-    header .contact_block {
-        width: 30%;
+    header .contact-block {
+
         margin: 10px;
     }
 
-    header .contact_block .socials {
+    header .contact-block .socials {
         gap: 3px;
     }
 
-    header .contact_block button {
+    header .contact-block button {
         width: 1.8rem;
     }
 
-    header .contact_block .text {
+    header .contact-block .text {
         font-size: 1rem;
     }
 
